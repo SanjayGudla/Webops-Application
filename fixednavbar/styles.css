@@ -1,0 +1,54 @@
+body{
+  margin: 0;
+  font-family:sans-serif;
+  color:floralwhite;
+}
+
+
+ul{
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+  background-color:black;
+  position: fixed; /*Position is fixed.so, navigation bar sticks to top of screen*/
+  top:0;
+  width:100%;
+}
+
+li{
+  display: inline-block; /*inline-block display is used so that navigationbar is horizontal*/
+}
+
+li a{
+  display:block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*On hovering to a item which is currently not active in navigation bar background color changes*/
+li a:hover:not(.active){
+  background-color: #9575CD;
+}
+
+/*currently active item background color is made differed*/
+.active{
+  background-color: #04AA6D;
+}
+
+.content{
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #1abc9c;
+  background-image: url(https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1491889701000/photosp/2c0268cb-829d-4fd5-9a05-f99b859a9f92/stock-photo-portrait-people-blue-copy-space-beauty-sunglasses-lifestyle-person-woman-2c0268cb-829d-4fd5-9a05-f99b859a9f92.jpg);
+  height:1500px;
+  width:100%
+  margin:4em auto;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

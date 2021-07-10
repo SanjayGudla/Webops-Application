@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widthdevice-width,initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"> </script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="container">
+        <div id="display">
+          <!-- This is used to display time elapsed -->
+          00:00:00
+        </div>
+        <div class="buttons">
+
+          <!-- This is the first button that is used for start and stop-->
+          <!-- Onclick event calls startstop function-->
+          <button style="background-color:green" id="StartStop" onclick="startstop()">Start</button>
+
+          <!-- This is the second button that is used for pause ans resume-->
+          <!-- Onclick event calls pauseresume function-->
+          <button style="background-color:orange" id="PauseResume" onclick="pauseresume()">Pause</button>
+
+        </div>
+      </div>
+  </div>
+  </body>
+</html>

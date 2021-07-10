@@ -1,0 +1,60 @@
+/*For Larger Devices two boxes are placed side by side using flexbox*/
+@media(min-width:760px){
+  .container{
+    display :flex;
+  }
+  .box1{
+    margin-left:10%;
+    background: rgba(151,0,19,0.5);  /*Applying opacity only for background*/
+    height:200px;
+    width:35%;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    border: solid 1px black;
+  }
+  .box2{
+    margin-left:10%;
+    background-color:rgba(151,0,19);
+    height:200px;
+    width:35%;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    border: solid 1px black;
+    opacity:0.5;                     /*Applying opacity for entire Box */
+  }
+  p{
+    font-family: sans-serif;
+    color: black;
+  }
+}
+/*For Saller  Devices two boxes are stacked on on another */
+@media(max-width:760px){
+    .box1{
+      margin-left:10%;
+      background: rgba(151,0,19,0.5);   /*Applying opacity only for background*/
+      height:200px;
+      width:80%;
+      justify-content: center;
+      display:flex;
+      align-items: center;
+      border: solid 1px black;
+    }
+    .box2{
+      margin-top: 10%;
+      margin-left:10%;
+      background-color:rgba(151,0,19);
+      height:200px;
+      width:80%;
+      justify-content: center;
+      display:flex;
+      align-items: center;
+      border: solid 1px black;       /*Applying opacity for entire Box */
+      opacity:0.5;
+    }
+    p{
+      font-family: sans-serif;
+      color: black;
+    }
+}
